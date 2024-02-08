@@ -10,7 +10,6 @@ Postfix Calculator is a simple command-line calculator that performs arithmetic 
   - [Interactive Mode](#interactive-mode)
   - [Command-Line Mode](#command-line-mode)
 - [Supported Operations](#supported-operations)
-- [Examples](#examples)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -59,6 +58,9 @@ Square root (r)
 Average (a)
 Modulo (%)
 Swap top two elements (x)
+
+## Contributing
+If you would like to contribute to this project, feel free to fork the repository and submit pull requests.
 
 ## License
 This project is licensed under the MIT License.
