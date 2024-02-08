@@ -1,0 +1,5 @@
+# ninja log v5
+4	1744	1707320630795976996	CMakeFiles/PostFixCalc.dir/main.cpp.o	fabf492745e7ebb0
+5	1714	1707321247063121410	CMakeFiles/PostFixCalc.dir/Calc.cpp.o	5674cab5cce3b4cf
+1715	1808	1707321247169221531	PostFixCalc	406f079593214ff0
+7	1740	1707320630790475537	CMakeFiles/PostFixCalc.dir/NumStack.cpp.o	ef059e10a2f539cb

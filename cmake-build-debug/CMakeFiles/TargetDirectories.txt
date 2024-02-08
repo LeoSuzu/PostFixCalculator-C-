@@ -1,0 +1,3 @@
+/Users/LeMac/Code_projects/Git/GitHub/public/PostFixCalc/cmake-build-debug/CMakeFiles/PostFixCalc.dir
+/Users/LeMac/Code_projects/Git/GitHub/public/PostFixCalc/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/LeMac/Code_projects/Git/GitHub/public/PostFixCalc/cmake-build-debug/CMakeFiles/rebuild_cache.dir
