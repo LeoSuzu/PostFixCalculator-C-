@@ -39,13 +39,14 @@ int main(int argc, char* argv[]) {
         // Tulosta ohjeet, jos ohjelmaa ajetaan komentoriviltä
         if (promptMode) {
             std::cout << "Syötä numerot välilyönnillä ja operaatio lopussa:" << std::endl;
-            std::cout << "(+, -, *, /, e(exp), r(sqrt), a(avg), %(modulo) tai x (vaihda ylimmät kaksi pinossa)): " << std::endl;
+            std::cout << "(+, -, *, /, e(exp), r(sqrt), a(avg), %(modulo) tai x (vaihda kaksi ensimmäistä objektia pinossa)): " << std::endl;
             std::cout << "'esim 1. '2 1 x -' tai esim 2. '5 3 2 + '" << std::endl;
+            std::cout << "'q' lopeta ohjelma." << std::endl;
         }
 
         std::getline(std::cin, input);
 
-        if (input == "q") {
+        if (input == "q" || input == "Q" || !std::cin) {
             // Lopeta ohjelma, jos käyttäjä syöttää 'q'
             break;
         }
@@ -55,7 +56,7 @@ int main(int argc, char* argv[]) {
         calculator.printResult();
 
         if (promptMode) {
-            std::cout << "Haluatko suorittaa toisen laskun? (k/e): ";
+            std::cout << "Haluatko suorittaa toisen laskun? (y/e): ";
             std::cin >> valinta;
             std::cin.ignore(); // Jätä huomiotta rivinvaihto, joka jää syötteeseen
         } else {
@@ -63,7 +64,7 @@ int main(int argc, char* argv[]) {
             break;
         }
 
-    } while (valinta == 'k');
+    } while (valinta == 'y' || valinta == 'Y');
 
     return 0;
 }
