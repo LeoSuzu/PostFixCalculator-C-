@@ -21,7 +21,6 @@ int main(int argc, char* argv[]) {
             std::string input;
             for (int i = 1; i < argc; ++i) {
                 input += std::string(argv[i]) + " ";
-                std::cout << "Syöte " << i << ": " <<  input << std::endl;
             }
 
             // Suorita laskutoimitus

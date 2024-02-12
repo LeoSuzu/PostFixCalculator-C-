@@ -49,64 +49,65 @@ Output: 5
 ## Command-Line Mode
 Addition:
 ```bash
-./postfix-calculator "2 3 +"
+./postfix-calculator 2 3 +
 ```
 Output: 5
 
 
 Subtraction:
 ```bash
-./postfix-calculator "2 3 -"
+./postfix-calculator 2 3 -
 ```
 Output: -1
 
 
 Multiplication:
 ```bash
-./postfix-calculator "4 7 *"
+./postfix-calculator 4 7 "*"
+// USE "" around asterix
 ```
 Output: 28
 
 
 Division:
 ```bash
-./postfix-calculator "9 3 /"
+./postfix-calculator 9 3 /
 ```
 Output: 3
 
 
 Exponentiation:
 ```bash
-./postfix-calculator "2 3 e"
+./postfix-calculator 2 3 e
 ```
 Output: 8
 
 Summation:
 ```bash
-./postfix-calculator "2 2 2 2 2 s"
+./postfix-calculator 2 2 2 2 2 s
 ```
 Output: 10
 
 Square root:
 ```bash
-./postfix-calculator "9 r"
+./postfix-calculator 9 r
 ```
 Output: 3
 
 Average:
 ```bash
-./postfix-calculator "2 4 8 a"
+./postfix-calculator 2 4 8 a
 ```
 
 Modulo:
 ```bash
-./postfix-calculator "9 3 %"
+./postfix-calculator 9 3 %
 ```
 Output: 0
 
 Swap top two elements:
 ```bash
-./postfix-calculator "2 3 x -"
+./postfix-calculator 2 3 x -
 ```
 Output: 1
 
