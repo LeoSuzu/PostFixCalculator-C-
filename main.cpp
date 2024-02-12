@@ -21,7 +21,7 @@ int main(int argc, char* argv[]) {
             std::string input;
             for (int i = 1; i < argc; ++i) {
                 input += std::string(argv[i]) + " ";
-                std::cout << "Syöte " << i - 1 << ": " <<  input << std::endl;
+                std::cout << "Syöte " << i << ": " <<  input << std::endl;
             }
 
             // Suorita laskutoimitus
@@ -39,7 +39,7 @@ int main(int argc, char* argv[]) {
         // Tulosta ohjeet, jos ohjelmaa ajetaan komentoriviltä
         if (promptMode) {
             std::cout << "Syötä numerot välilyönnillä ja operaatio lopussa:" << std::endl;
-            std::cout << "(+, -, *, /, e(exp), r(sqrt), a(avg), %(modulo) tai x (vaihda kaksi ensimmäistä objektia pinossa)): " << std::endl;
+            std::cout << "(+, -, *, /, e(exp), r(sqrt), a(avg), %(modulo), s(sum) tai x (vaihda kaksi ensimmäistä objektia pinossa)): " << std::endl;
             std::cout << "'esim 1. '2 1 x -' tai esim 2. '5 3 2 + '" << std::endl;
             std::cout << "'q' lopeta ohjelma." << std::endl;
         }

@@ -138,9 +138,8 @@ void Calc::performOperation(char operation) {
                 ++count;
             }
             if (count > 0) {
-                std::cout << "Keskiarvo: " << std::fixed << std::setprecision(2) << sum / count << std::endl;
-                std::cout << "Keskiarvo kokonaislukuun pyöristettynä: ";
-                stack.push(static_cast<int>(sum / count));
+                double average = sum / count;
+                stack.push(average);  // Push the average back to the stack
             } else {
                 std::cout << "Virhe: Keskiarvon laskeminen tyhjästä pinosta." << std::endl;
             }
@@ -185,23 +184,23 @@ void Calc::performOperation(char operation) {
 void Calc::exchangeTopTwo() {
     // Vaihtaa pinon kahden päällimmäisen alkion paikkaa.
     if (stack.getTop() >= 2) {
-        int top = stack.pop();     // Poista päällimmäinen alkio
-        int second = stack.pop();  // Poista toiseksi päällimmäinen alkio
+        int top = static_cast<int>(stack.pop());       // Poista päällimmäinen alkio
+        int second = static_cast<int>(stack.pop());    // Poista toiseksi päällimmäinen alkio
 
         // Lisää alkiot takaisin samaan järjestykseen
-        stack.push(second);
         stack.push(top);
+        stack.push(second);
     } else {
         std::cout << "Virhe: Liian vähän alkioita pinossa vaihtamiseen." << std::endl;
     }
 }
 
 void Calc::printResult() {
-    // Tulostaa lopputuloksen.
-    if (!stack.isFull()) {
-        std::cout << "Tulos: " << stack.getTop() << std::endl;
+
+    if (stack.getCount() == 1) {
+        std::cout << std::fixed << std::setprecision(2) << stack.pop() << std::endl;
     } else {
-        std::cout << "Virhe: Epätäydellinen laskutoimitus." << std::endl;
+        std::cout << "Virhe: Epätäydellinen laskutoimitus tai liian monta alkiota pinossa." << std::endl;
     }
 }
 
